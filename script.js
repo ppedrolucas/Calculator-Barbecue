@@ -20,21 +20,15 @@ function calcular() {
   let refrigerante = unicesumar(300, 400, 200);
   let cerveja = unicesumar(800, 500, 0);
 
+  var vetor = [carne, frango, linguiça, refrigerante, cerveja];
   result.style.display = "block";
 
-  class Lista extends HTMLElement {
-    connectedCallback() {
-      this.innerHTML = `
-        <ul class="lista">
-          <li>${carne}kg de Carne</li>
-          <li>${frango}kg de Frango</li>
-          <li>${linguiça}kg de Linguiça</li>
-          <li>${refrigerante}L de Refrigerante</li>
-          <li>${cerveja}L de Cerveja</li>
-        </ul>
-        `;
-    }
-  }
-
-  customElements.define("log-lista", Lista);
+  result.innerHTML = `<p>Ingredientes necessários:</p>
+  <ul class="lista">
+    <li>${carne}kg de carne</li>
+    <li>${frango}kg de frango</li>
+    <li>${linguiça}kg de linguiça</li>
+    <li>${refrigerante}L de refrigerante</li>
+    <li>${cerveja}L de cerveja</li>
+  </ul>`;
 }
