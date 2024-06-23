@@ -22,7 +22,7 @@ function calcular() {
 
   result.style.display = "block";
 
-  result.innerHTML = `<p>Ingredientes necessários:</p>
+  result.innerHTML = `<p>Quantidade de items a serem comprados:</p>
   <ul class="lista">
     <li>${carne}kg de carne</li>
     <li>${frango}kg de frango</li>

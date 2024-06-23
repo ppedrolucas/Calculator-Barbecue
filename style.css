@@ -17,13 +17,17 @@ body {
     #e11d48,
     #7e22ce
   );
+  background-repeat: no-repeat;
 }
 .container {
+  width: 100%;
+  padding: 32px;
   display: flex;
-  gap: 64px;
 }
 
 .calculator {
+  animation: appear 1s backwards;
+  margin: 0 auto 0 auto;
   background-color: #ffffff50;
   color: #fff;
   box-shadow: 0 32px 64px -12px rgb(0 0 0 / 0.5);
@@ -31,6 +35,7 @@ body {
   border-radius: 32px;
 }
 .card {
+  animation: appear 1s backwards;
   display: none;
   max-height: max-content;
 }
@@ -71,7 +76,7 @@ input:focus {
 }
 
 #btn {
-  background-image: linear-gradient(45deg, #facc15, #dc2626, #7e22ce);
+  background-color: #7e22ce;
   padding: 16px;
   outline: none;
   border: none;
@@ -82,7 +87,8 @@ input:focus {
 
 #btn:hover,
 #btn:focus {
-  background-image: linear-gradient(45deg, #7e22ce, #dc2626, #facc15);
+  background-color: #511783;
+  transition: 0.5s ease-in;
 }
 
 .lista {
@@ -91,9 +97,15 @@ input:focus {
   list-style: none;
 }
 
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+}
 @media (max-width: 780px) {
   .container {
+    height: 100vh;
+    justify-content: space-around;
     flex-direction: column;
-    padding: 32px;
   }
 }
