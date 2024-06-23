@@ -20,7 +20,6 @@ function calcular() {
   let refrigerante = unicesumar(300, 400, 200);
   let cerveja = unicesumar(800, 500, 0);
 
-  var vetor = [carne, frango, linguiça, refrigerante, cerveja];
   result.style.display = "block";
 
   result.innerHTML = `<p>Ingredientes necessários:</p>
