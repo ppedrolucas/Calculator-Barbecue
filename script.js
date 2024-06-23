@@ -29,6 +29,6 @@ function calcular() {
     <li>${frango}kg de frango</li>
     <li>${linguiça}kg de linguiça</li>
     <li>${refrigerante}L de refrigerante</li>
-    <li>${cerveja}L de cerveja</li>
+    <li>${cerveja}L de cerveja, OBS: Crianças não contam 👍</li>
   </ul>`;
 }
